@@ -1,0 +1,139 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e293b;
+    margin: 0 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 60px auto;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+}
+
+/* About */
+#about p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Projects Grid */
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article h3 {
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+/* Contact */
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
+/* Profile Picture */
+.profile-container {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
